@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+ 	 <CheckBox
+        android:id="@+id/set_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/music_title" />
+ 	 
+    <CheckBox
+        android:id="@+id/set_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_title" />
+    
+    <RelativeLayout android:id="@+id/relativeLayout1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content">
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/savebutton_name"
+        android:textSize="13sp" />
+
+   
+
+    </RelativeLayout> 
+
+</LinearLayout> 

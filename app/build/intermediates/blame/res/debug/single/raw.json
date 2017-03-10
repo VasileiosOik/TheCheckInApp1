@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\fallbackring.ogg",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\raw\\fallbackring.ogg"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\aplo2.mp3",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\raw\\aplo2.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\aplo.mp3",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\raw\\aplo.mp3"
+    }
+]

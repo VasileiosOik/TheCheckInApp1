@@ -1,0 +1,429 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\TheCheckInApp.iml
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\workspace.xml
+* ic_launcher-web.png
+* jtds-1.3.0-dist\
+* jtds-1.3.0-dist\CHANGELOG
+* jtds-1.3.0-dist\IA64\
+* jtds-1.3.0-dist\IA64\SSO\
+* jtds-1.3.0-dist\IA64\SSO\ntlmauth.dll
+* jtds-1.3.0-dist\LICENSE
+* jtds-1.3.0-dist\README
+* jtds-1.3.0-dist\README.SSL
+* jtds-1.3.0-dist\README.SSO
+* jtds-1.3.0-dist\README.XA
+* jtds-1.3.0-dist\conf\
+* jtds-1.3.0-dist\conf\connection.properties.tmpl
+* jtds-1.3.0-dist\conf\jtds-ds.xml
+* jtds-1.3.0-dist\conf\jtds-xa-ds.xml
+* jtds-1.3.0-dist\html\
+* jtds-1.3.0-dist\html\TDS.html
+* jtds-1.3.0-dist\html\apiCursors.html
+* jtds-1.3.0-dist\html\benchTest.html
+* jtds-1.3.0-dist\html\charsets.html
+* jtds-1.3.0-dist\html\devLinks.html
+* jtds-1.3.0-dist\html\doc.html
+* jtds-1.3.0-dist\html\faq.html
+* jtds-1.3.0-dist\html\features.html
+* jtds-1.3.0-dist\html\images\
+* jtds-1.3.0-dist\html\images\logo.gif
+* jtds-1.3.0-dist\html\images\logoBg.gif
+* jtds-1.3.0-dist\html\images\logoDBSolo.gif
+* jtds-1.3.0-dist\html\images\logoDataDino.gif
+* jtds-1.3.0-dist\html\images\logoDbVisualizer.gif
+* jtds-1.3.0-dist\html\images\logoFreeTDS.gif
+* jtds-1.3.0-dist\html\images\logoJDBC.gif
+* jtds-1.3.0-dist\html\images\logoSQLServer.gif
+* jtds-1.3.0-dist\html\images\logoSourceForge.gif
+* jtds-1.3.0-dist\html\images\logoSquirrelSQL.gif
+* jtds-1.3.0-dist\html\images\mainb.gif
+* jtds-1.3.0-dist\html\images\mainbl.gif
+* jtds-1.3.0-dist\html\images\mainbr.gif
+* jtds-1.3.0-dist\html\images\mainl.gif
+* jtds-1.3.0-dist\html\images\mainr.gif
+* jtds-1.3.0-dist\html\images\maint.gif
+* jtds-1.3.0-dist\html\images\maintl.gif
+* jtds-1.3.0-dist\html\images\maintr.gif
+* jtds-1.3.0-dist\html\images\spacer.gif
+* jtds-1.3.0-dist\html\index.html
+* jtds-1.3.0-dist\html\license.html
+* jtds-1.3.0-dist\html\links.html
+* jtds-1.3.0-dist\html\newMembers.html
+* jtds-1.3.0-dist\html\resultSets.html
+* jtds-1.3.0-dist\html\sqldoc.css
+* jtds-1.3.0-dist\html\style.css
+* jtds-1.3.0-dist\html\typemap.html
+* jtds-1.3.0-dist\jtds-1.3.0.jar
+* jtds-1.3.0-dist\x64\
+* jtds-1.3.0-dist\x64\SSO\
+* jtds-1.3.0-dist\x64\SSO\ntlmauth.dll
+* jtds-1.3.0-dist\x86\
+* jtds-1.3.0-dist\x86\SSO\
+* jtds-1.3.0-dist\x86\SSO\ntlmauth.dll
+* jtds-1.3.0-dist\x86\XA\
+* jtds-1.3.0-dist\x86\XA\JtdsXA.dll
+* jtds-1.3.0-dist\x86\XA\instjtds.sql
+* mysql-connector-java-5.1.22\
+* mysql-connector-java-5.1.22\CHANGES
+* mysql-connector-java-5.1.22\COPYING
+* mysql-connector-java-5.1.22\README
+* mysql-connector-java-5.1.22\README.txt
+* mysql-connector-java-5.1.22\build.xml
+* mysql-connector-java-5.1.22\docs\
+* mysql-connector-java-5.1.22\docs\README.txt
+* mysql-connector-java-5.1.22\docs\connector-j.html
+* mysql-connector-java-5.1.22\docs\connector-j.pdf
+* mysql-connector-java-5.1.22\mysql-connector-java-5.1.22-bin.jar
+* mysql-connector-java-5.1.22\src\
+* mysql-connector-java-5.1.22\src\com\
+* mysql-connector-java-5.1.22\src\com\mysql\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\AssertionFailedException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\AuthenticationPlugin.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\BalanceStrategy.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\BestResponseTimeBalanceStrategy.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Blob.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\BlobFromLocator.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Buffer.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\BufferRow.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ByteArrayRow.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CacheAdapter.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CacheAdapterFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CachedResultSetMetaData.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CallableStatement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CharsetMapping.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Charsets.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Clob.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CommunicationsException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\CompressedInputStream.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Connection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionFeatureNotAvailableException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionGroup.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionGroupManager.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionImpl.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionLifecycleInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionProperties.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionPropertiesImpl.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ConnectionPropertiesTransform.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Constants.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\DatabaseMetaData.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\DatabaseMetaDataUsingInfoSchema.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\DocsConnectionPropsHelper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Driver.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\EscapeProcessor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\EscapeProcessorResult.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\EscapeTokenizer.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ExceptionInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ExportControlled.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Extension.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\FailoverConnectionProxy.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Field.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\IterateBlock.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4CallableStatement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4ClientInfoProvider.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4ClientInfoProviderSP.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4CommentClientInfoProvider.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4Connection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4DatabaseMetaData.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4DatabaseMetaDataUsingInfoSchema.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4LoadBalancedMySQLConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4MySQLConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4MysqlSQLXML.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4NClob.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4PreparedStatement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4PreparedStatementHelper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4ResultSet.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4ServerPreparedStatement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\JDBC4UpdatableResultSet.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\LicenseConfiguration.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\LoadBalanceExceptionChecker.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\LoadBalancedAutoCommitInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\LoadBalancedMySQLConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\LoadBalancingConnectionProxy.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\LocalizedErrorMessages.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Messages.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MiniAdmin.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MySQLConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MysqlDataTruncation.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MysqlDefs.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MysqlErrorNumbers.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MysqlIO.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MysqlParameterMetadata.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\MysqlSavepoint.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NamedPipeSocketFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NdbLoadBalanceExceptionChecker.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NetworkResources.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NoSubInterceptorWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NonRegisteringDriver.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NonRegisteringReplicationDriver.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NotImplemented.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\NotUpdatable.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\OperationNotSupportedException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\OutputStreamWatcher.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\PacketTooBigException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ParameterBindings.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\PerConnectionLRUFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\PingTarget.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\PreparedStatement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ProfilerEventHandlerFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\RandomBalanceStrategy.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ReflectiveStatementInterceptorAdapter.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ReplicationConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ReplicationDriver.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ResultSetImpl.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ResultSetInternalMethods.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ResultSetMetaData.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ResultSetRow.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\RowData.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\RowDataCursor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\RowDataDynamic.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\RowDataStatic.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\SQLError.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Security.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\SequentialBalanceStrategy.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\ServerPreparedStatement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\SingleByteCharsetConverter.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\SocketFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\SocketMetadata.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StandardLoadBalanceExceptionChecker.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StandardSocketFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Statement.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StatementImpl.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StatementInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StatementInterceptorV2.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StreamingNotifiable.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\StringUtils.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\TimeUtil.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\UpdatableResultSet.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\Util.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\V1toV2StatementInterceptorAdapter.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\WatchableOutputStream.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\WatchableWriter.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\WriterWatcher.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\authentication\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\authentication\MysqlClearPasswordPlugin.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\authentication\MysqlNativePasswordPlugin.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\authentication\MysqlOldPasswordPlugin.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\authentication\Sha256PasswordPlugin.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\3-0-Compat.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\5-0-Compat.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\clusterBase.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\coldFusion.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\fullDebug.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\maxPerformance.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\configs\solarisMaxPerformance.properties
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\DeadlockTimeoutRollbackMarker.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLDataException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLIntegrityConstraintViolationException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLInvalidAuthorizationSpecException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLNonTransientConnectionException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLNonTransientException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLStatementCancelledException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLSyntaxErrorException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLTimeoutException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLTransactionRollbackException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLTransientConnectionException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\MySQLTransientException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\CommunicationsException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLDataException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLIntegrityConstraintViolationException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLInvalidAuthorizationSpecException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLNonTransientConnectionException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLNonTransientException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLSyntaxErrorException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTimeoutException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTransactionRollbackException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTransientConnectionException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\exceptions\jdbc4\MySQLTransientException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\integration\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\integration\c3p0\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\integration\c3p0\MysqlConnectionTester.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\integration\jboss\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\integration\jboss\ExtendedMysqlExceptionSorter.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\integration\jboss\MysqlValidConnectionChecker.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\interceptors\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\interceptors\ResultSetScannerInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\interceptors\ServerStatusDiffInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\interceptors\SessionAssociationInterceptor.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\CallableStatementWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\ConnectionWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4CallableStatementWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4ConnectionWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4MysqlPooledConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4MysqlXAConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4PreparedStatementWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4StatementWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\JDBC4SuspendableXAConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlConnectionPoolDataSource.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlDataSource.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlDataSourceFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlPooledConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlXAConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlXADataSource.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlXAException.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\MysqlXid.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\PreparedStatementWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\StatementWrapper.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\SuspendableXAConnection.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jdbc2\optional\WrapperBase.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jmx\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jmx\LoadBalanceConnectionGroupManager.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\jmx\LoadBalanceConnectionGroupManagerMBean.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\Jdk14Logger.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\Log.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\LogFactory.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\LogUtils.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\NullLogger.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\Slf4JLogger.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\log\StandardLogger.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\profiler\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\profiler\LoggingProfilerEventHandler.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\profiler\ProfilerEvent.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\profiler\ProfilerEventHandler.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\BaseBugReport.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\ErrorMappingsDocGenerator.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\LRUCache.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\PropertiesDocGenerator.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\ReadAheadInputStream.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\ResultSetUtil.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\ServerController.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\TimezoneDump.java
+* mysql-connector-java-5.1.22\src\com\mysql\jdbc\util\VersionFSHierarchyMaker.java
+* mysql-connector-java-5.1.22\src\doc\
+* mysql-connector-java-5.1.22\src\doc\sources\
+* mysql-connector-java-5.1.22\src\doc\sources\connPropsToDocbook.xsl
+* mysql-connector-java-5.1.22\src\doc\sources\errorMapToDocbook.xsl
+* mysql-connector-java-5.1.22\src\doc\sources\placeholder.txt
+* mysql-connector-java-5.1.22\src\doc\sources\pom.xml
+* mysql-connector-java-5.1.22\src\lib\
+* mysql-connector-java-5.1.22\src\lib\ant-contrib.jar
+* mysql-connector-java-5.1.22\src\lib\c3p0-0.9.1-pre6.jar
+* mysql-connector-java-5.1.22\src\lib\c3p0-0.9.1-pre6.src.zip
+* mysql-connector-java-5.1.22\src\lib\jboss-common-jdbc-wrapper-src.jar
+* mysql-connector-java-5.1.22\src\lib\jboss-common-jdbc-wrapper.jar
+* mysql-connector-java-5.1.22\src\lib\slf4j-api-1.6.1.jar
+* mysql-connector-java-5.1.22\src\org\
+* mysql-connector-java-5.1.22\src\org\gjt\
+* mysql-connector-java-5.1.22\src\org\gjt\mm\
+* mysql-connector-java-5.1.22\src\org\gjt\mm\mysql\
+* mysql-connector-java-5.1.22\src\org\gjt\mm\mysql\Driver.java
+* mysql-connector-java-5.1.22\src\testsuite\
+* mysql-connector-java-5.1.22\src\testsuite\BaseTestCase.java
+* mysql-connector-java-5.1.22\src\testsuite\UnreliableSocketFactory.java
+* mysql-connector-java-5.1.22\src\testsuite\perf\
+* mysql-connector-java-5.1.22\src\testsuite\perf\BasePerfTest.java
+* mysql-connector-java-5.1.22\src\testsuite\perf\LoadStorePerfTest.java
+* mysql-connector-java-5.1.22\src\testsuite\perf\RetrievalPerfTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\
+* mysql-connector-java-5.1.22\src\testsuite\regression\AppletRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\BlobRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\CachedRowsetTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\CallableStatementRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\ConnectionRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\DataSourceRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\EscapeProcessorRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\MetaDataRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\MicroPerformanceRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\NumbersRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\PooledConnectionRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\ResultSetRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\StatementRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\StressRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\StringRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\regression\SubqueriesRegressionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\
+* mysql-connector-java-5.1.22\src\testsuite\simple\BlobTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\CallableStatementTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\CharsetTests.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\ConnectionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\DataSourceTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\DateTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\EscapeProcessingTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\MetadataTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\MiniAdminTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\NumbersTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\ReadOnlyCallableStatementTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\ResultSetTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\SSLTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\ServerControllerTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\SimpleTransformer.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\SplitDBdotNameTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\StatementsTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\TestBug57662Logger.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\TestLifecycleInterceptor.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\TransactionTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\TraversalTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\UpdatabilityTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\XATest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\jdbc4\
+* mysql-connector-java-5.1.22\src\testsuite\simple\jdbc4\StatementsTest.java
+* mysql-connector-java-5.1.22\src\testsuite\simple\tb2-data.txt.gz
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\ca-cert.pem
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\ca-key.pem
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\server-cert.pem
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\server-key.pem
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\server-req.pem
+* mysql-connector-java-5.1.22\src\testsuite\ssl-test-certs\test-cert-store
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* libs\mysql-connector-java-3.0.17-ga-bin.jar => app\libs\mysql-connector-java-3.0.17-ga-bin.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

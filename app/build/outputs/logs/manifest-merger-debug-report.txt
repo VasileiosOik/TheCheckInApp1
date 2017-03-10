@@ -1,0 +1,133 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:2:1-92:12
+	package
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:10:2-11:63
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:11:4-60
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:12:2-13:61
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:13:4-58
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:14:2-15:49
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:15:4-46
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:18:6-93
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:18:23-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:20:7-70
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:20:24-67
+application
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:22:5-89:19
+	android:label
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:25:9-41
+	android:allowBackup
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:23:9-35
+	android:icon
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:24:9-45
+	android:theme
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:26:9-40
+uses-library#com.google.android.maps
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:28:10-65
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:28:24-62
+activity#com.example.thecheckinapp.LoadingScreenActivity
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:32:9-40:20
+	android:label
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:34:13-45
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:33:13-75
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:38:27-74
+activity#com.example.thecheckinapp.SpalshScreenActivity
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:42:9-45:21
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:43:13-49
+activity#com.example.thecheckinapp.About
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:47:9-51:24
+	android:label
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:49:13-48
+	android:theme
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:50:13-56
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:48:13-34
+activity#com.example.thecheckinapp.Register
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:53:9-55:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:54:13-37
+activity#com.example.thecheckinapp.Beginning
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:57:9-59:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:58:13-38
+activity#com.example.thecheckinapp.Start
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:61:9-63:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:62:11-32
+activity#com.example.thecheckinapp.PlayGame
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:65:9-67:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:66:11-35
+activity#com.example.thecheckinapp.Prefs
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:69:10-72:20
+	android:label
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:71:11-49
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:70:11-32
+activity#com.example.thecheckinapp.MusicService
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:74:11-76:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:75:11-39
+activity#com.example.thecheckinapp.chlistview
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:78:13-80:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:79:11-37
+activity#com.example.thecheckinapp.ListViewCheckboxesActivity
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:82:13-84:20
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:83:11-53
+service#com.example.thecheckinapp.MusicService
+ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:87:9-72
+	android:enabled
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:87:18-40
+	android:name
+		ADDED from C:\Users\Bill\StudioProjects\TheCheckInApp1\app\src\main\AndroidManifest.xml:87:41-69

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mapstart.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\mapstart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settingsmenu.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\settingsmenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_checkin.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\list_checkin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\simplerow.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\simplerow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\loadingscreen.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\loadingscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_start.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\activity_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mainlist.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\mainlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\infos.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\infos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\start2.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\start2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mainloading.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\layout\\mainloading.xml"
+    }
+]

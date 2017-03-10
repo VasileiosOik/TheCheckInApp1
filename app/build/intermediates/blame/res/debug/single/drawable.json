@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\radialback.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\radialback.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pin.png",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\pin.png"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_button.xml",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\round_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo2.png",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\logo2.png"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pin_red.png",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\pin_red.png"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo1.png",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\logo1.png"
+    },
+    {
+        "merged": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "C:\\Users\\Bill\\StudioProjects\\TheCheckInApp1\\app\\src\\main\\res\\drawable\\logo.png"
+    }
+]
