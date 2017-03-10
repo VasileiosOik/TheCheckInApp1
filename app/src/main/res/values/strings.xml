@@ -34,5 +34,8 @@
 	    <string name="startButton_name">Start Game</string>
 	    <string name="title_name">Check In</string>
 	    <string name="map_print">Print the places</string>
-	    
+    <string name="checkIn">Checking-in...</string>
+    <string name="nameChange">The nickname you chose is already taken. Pleace enter an other one...</string>
+    <string name="accountNew">Creating a new account...</string>
+
 </resources>

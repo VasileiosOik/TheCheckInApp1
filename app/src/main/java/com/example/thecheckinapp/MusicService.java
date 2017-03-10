@@ -3,11 +3,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
-import android.media.MediaPlayer.OnErrorListener;
-import android.os.Binder;
-import android.os.Bundle;
 import android.os.IBinder;
-import android.widget.Toast;
 
 public class MusicService extends Service implements OnCompletionListener {
 	 MediaPlayer mediaPlayer;

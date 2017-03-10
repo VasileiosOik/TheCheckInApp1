@@ -1,14 +1,8 @@
 package com.example.thecheckinapp;
 
-
-
-
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
@@ -29,8 +23,6 @@ public class LoadingScreenActivity extends Activity
 	        _tik.start();
 	        
 			//Initialize a LoadViewTask object and call the execute() method
-	        Log.i("prin to loading11111111111", "loading11111111111");
-	        
 	    }
 	    
 	    //To use the AsyncTask, it must be subclassed
@@ -126,15 +118,11 @@ public class LoadingScreenActivity extends Activity
 	    {
 	    	//Emulate the progressDialog.setCancelable(false) behavior
 	    	//If the first view is being shown
-	    	if(viewSwitcher.getDisplayedChild() == 0)
-	    	{
-	    		//Do nothing
-	    		return;
-	    	}
-	    	else
-	    	{
-	    		//Finishes the current Activity
-	    		super.onBackPressed();
-	    	}
-	    }
+			if (viewSwitcher.getDisplayedChild() != 0) {
+                //Finishes the current Activity
+                super.onBackPressed();
+            } else {
+                //Do nothing
+            }
+		}
 	}

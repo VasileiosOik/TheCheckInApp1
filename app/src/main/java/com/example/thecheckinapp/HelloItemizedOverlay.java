@@ -1,19 +1,13 @@
 package com.example.thecheckinapp;
 
-import java.util.ArrayList;
-
 import android.app.AlertDialog;
-import android.content.ClipData.Item;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.os.Handler;
 import android.util.Log;
-import android.view.MotionEvent;
-
-import com.google.android.maps.GeoPoint;
 import com.google.android.maps.ItemizedOverlay;
-import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
+
+import java.util.ArrayList;
 
 public class HelloItemizedOverlay extends ItemizedOverlay<OverlayItem> {
 	
@@ -42,14 +36,12 @@ public class HelloItemizedOverlay extends ItemizedOverlay<OverlayItem> {
 	//it will call createItem(int) in the ItemizedOverlay to retrieve each OverlayItem.
 	@Override
 	protected OverlayItem createItem(int i) {
-		// TODO Auto-generated method stub
 		return mOverlays.get(i);
 		
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
 		return mOverlays.size();
 		
 	}

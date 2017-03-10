@@ -22,10 +22,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -77,7 +74,6 @@ public class PlayGame extends MapActivity implements OnClickListener
 			try {
 				Class.forName("android.os.AsyncTask");
 			} catch (ClassNotFoundException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			
@@ -90,7 +86,7 @@ public class PlayGame extends MapActivity implements OnClickListener
 			View rankButton = findViewById(R.id.map_print_button);
 			rankButton.setOnClickListener(this);	
 	        
-		/**Initialize  MAP**/
+		//Initialize  MAP
 			map = (MapView) findViewById(R.id.mapView);
 			map.setClickable(true);
 			map.setEnabled(true);
@@ -152,7 +148,7 @@ public class PlayGame extends MapActivity implements OnClickListener
 	    		Log.i("User Coordinates: ","latitude: "+current_latitude+" longitude: "+current_longitude);	
 	    		
 	    		//Log.i("Location Listener","Location changed");
-	    		if(is_first_time ==true && is_in_thread==false)
+	    		if(is_first_time && !is_in_thread)
 	      		{	    		
 	    			//drawCheckpointsonMap();	
 	    		new UpdateMarkers().execute(); 
@@ -204,7 +200,7 @@ public class PlayGame extends MapActivity implements OnClickListener
 	      try {
 	      	ResultSet reset;
 	  		reset = stmt.executeQuery("select id_venue from `venues` where name_venue='"+name+"'");
-	  		if(reset.next()==false)
+	  		if(!reset.next())
 	  		{
 	  			stmt.execute("INSERT INTO  `test`.`venues` (`id_venue` ,`name_venue` ,`latitude` ,`longitude`)VALUES ('"+id+"','"+name+"','"+latitude+"','"+longitude+"');");
 	  			//bohthiko
@@ -212,10 +208,9 @@ public class PlayGame extends MapActivity implements OnClickListener
 	  			Log.i("venue insert ok",name);
 	  		}
 	  		else
-	  			Log.i("checkpoint already added",name);
+	  			Log.i("checkpoint existed",name);
 	  		
 	      } catch (SQLException e) {
-	    	  // TODO Auto-generated catch block
 	    	  Log.e("insert venue error",name);
 	      }
 	      
@@ -237,7 +232,7 @@ public class PlayGame extends MapActivity implements OnClickListener
 		    }
 	  
 	  
-	  //*************************************SXEDIASMO TWN CHECKPOINTS STO XARTH***********************************
+	  //SXEDIASMO TWN CHECKPOINTS STO XARTH
 	  public void drawCheckpointsonMap()
 	  {
 	  /**Show Foursquare Checkpoints on Map**/
@@ -267,7 +262,7 @@ public class PlayGame extends MapActivity implements OnClickListener
 	  		  	
 	  	// Draw markers on map if the checkpoints are not visited by the current user
 	  		//edw upirxe to is_visited[i]==false && shown_checkpoints<3 
-	  	if(is_visited[i]==false  && checkpoints_list.get(i).visited==false)
+	  	if(!is_visited[i] && checkpoints_list.get(i).visited==false)
 	  	{
 	  		
 	  	 shown_checkpoints++;
@@ -308,7 +303,7 @@ public class PlayGame extends MapActivity implements OnClickListener
 	  		 is_first_time=true;
 	  		 Toast toast = Toast.makeText(getApplicationContext(),"Loading new checkpoints. Please wait..", Toast.LENGTH_LONG);
 	  		 toast.show();
-	  		 if(is_in_thread==false)
+	  		 if(!is_in_thread)
 	     		{
 	   		new UpdateMarkers().execute(); //drawCheckpointsonMap()(kalesmata);
 	     		}
@@ -322,9 +317,8 @@ public class PlayGame extends MapActivity implements OnClickListener
 	  //**************************************edw h megalh diskolia******************************************************
 	 public class UpdateMarkers extends AsyncTask<Void, Void, Void> 
 	 {
-	         
-          PlayGame map_activity;
-          List<Overlay> mapOverlays;
+
+		 List<Overlay> mapOverlays;
           
           Drawable drawable_blue,drawable_red;
           HelloItemizedOverlay itemizedoverlay;
@@ -340,7 +334,7 @@ public class PlayGame extends MapActivity implements OnClickListener
     		Log.i("UpdateMarkers Thread","UpdateMarkers Thread Start");	
   			
   			//Get list of checkpoints
-  	  		if(is_first_time==true)
+  	  		if(is_first_time)
   	  		{
   	  			Log.i("UpdateMarkers Thread","FIRST TIME = TRUE");
   	
@@ -358,9 +352,9 @@ public class PlayGame extends MapActivity implements OnClickListener
   	  		
 if(foursquare_checkpoints!=null)
 {
-  			overlayitem=new OverlayItem[checkpoints_list.size()];
-  			gp=new GeoPoint[checkpoints_list.size()];
-  			is_visited=new boolean[checkpoints_list.size()];
+  			overlayitem=new OverlayItem[checkpoints_list != null ? checkpoints_list.size() : 0];
+  			gp=new GeoPoint[checkpoints_list != null ? checkpoints_list.size() : 0];
+  			is_visited=new boolean[checkpoints_list != null ? checkpoints_list.size() : 0];
   			shown_checkpoints=0;
   		
   		
@@ -400,15 +394,15 @@ if(foursquare_checkpoints!=null)
   		
   			// Check if the user visited the current checkpoints
   			//edw upirxe to is_first_time==true && shown_checkpoints<3 
-  			if(is_first_time==true  &&  checkpoints_list.size()>i)
+  			if(is_first_time &&  checkpoints_list.size()>i)
   			{
-  				ResultSet reset,res2= null;
+  				ResultSet reset,res2;
   				try {
   					// Get id of checkpoint
   					reset = stmt.executeQuery("select id_venue from `venues` where name_venue='"+checkpoints_list.get(i).getname()+"'");
   					Log.i("UpdateMarkers Thread ","Query sent :"+checkpoints_list.get(i).getname());
   				
-  					if(reset.next()==true) //if checkpoint exists in DB
+  					if(reset.next()) //if checkpoint exists in DB
   					{
   						Log.i("UpdateMarkers Thread ","Checkpoint already in database:"+checkpoints_list.get(i).getname());
   						
@@ -417,7 +411,7 @@ if(foursquare_checkpoints!=null)
   						//res2 = stmt.executeQuery("select * from `visits` where idvenue="+reset.getString("id_venue")+" AND idvisits='"+Start.person_id+"'"); 
   						res2 = stmt.executeQuery("select * from `visits` where idvenue='"+reset+"' AND idvisits='"+Start.person_id+"'");
   						
-  						if(res2.next()==true) //if checkpoint exists in user visits
+  						if(res2.next()) //if checkpoint exists in user visits
   						{
   							is_visited[i]=true;
   							Log.i("UpdateMarkers Thread ","Checkpoint already in visits:"+checkpoints_list.get(i).getname());
@@ -441,18 +435,18 @@ if(foursquare_checkpoints!=null)
   					//Log.i("UpdateMarkers Thread DB check",checkpoints_list.get(i).getname()+": CheckpointClass: "+checkpoints_list.get(i).visited+ " Database: "+ is_visited[i]);
   				
   					} catch (SQLException e) {
-  						Log.i("UpdateMarkers Thread db query","not found" +e.getMessage());
+  						Log.i("Thread db query","not found" +e.getMessage());
   						try {
   							conn = (Connection) DriverManager.getConnection(connection_address,username,password);
   						} catch (SQLException e1) {
-  							// TODO Auto-generated catch block
+
   							e1.printStackTrace();
   						}
-  						Log.w("UpdateMarkers Thread Connection","open");
+  						Log.w("Thread Connection","open");
   						try {
   							stmt = (Statement) conn.createStatement();
   						} catch (SQLException e1) {
-  							// TODO Auto-generated catch block
+
   							e1.printStackTrace();
   						}
   						is_visited[i]=true;
@@ -464,7 +458,7 @@ if(foursquare_checkpoints!=null)
   		
   			// Draw markers on map if the checkpoints are not visited by the current user
   			//edw upirxe to is_visited[i]==false && shown_checkpoints<3
-  			if(is_visited[i]==false && checkpoints_list.get(i).visited==false)
+  			if(!is_visited[i] && checkpoints_list.get(i).visited==false)
   			{
   		 
   				//Log.i("UpdateMarkers Thread place to visit"," "+i+" "+checkpoints_list.get(i).getname());
@@ -496,7 +490,7 @@ if(foursquare_checkpoints!=null)
     	
 }
   		 		
-  		Log.i("UpdateMarkers Thread","UpdateMarkers Thread Exit "+checkpoints_list.size());		
+  		Log.i("UpdateMarkers Thread","UpdateMarkers Thread Exit "+ (checkpoints_list != null ? checkpoints_list.size() : 0));
   		return null;
         	
 }
@@ -529,7 +523,7 @@ if(foursquare_checkpoints!=null)
       	size=shown_checkpoints;
    
       	map.getOverlays().add(user_overlay);
-      	if(is_first_time==true)
+      	if(is_first_time)
       	{
       		Toast toast = Toast.makeText(getApplicationContext(),"Checkpoints on map updated succesfully", Toast.LENGTH_LONG);
       		toast.show();
@@ -552,9 +546,9 @@ if(foursquare_checkpoints!=null)
     	  	    	
     	  protected void onPreExecute()
     	  {
-    		/**Show Foursquare Checkpoints on Map**/
+    		//Show Foursquare Checkpoints on Map
     		is_in_thread=true;
-    		if(is_first_time==true)  
+    		if(is_first_time)
     		task.append("Updating checkpoints...\n");
     	 		
     		//Initialize map marker overlays blue and red
@@ -575,7 +569,7 @@ if(foursquare_checkpoints!=null)
 
 		@Override
 		protected Context doInBackground(Context... params) {
-			// TODO Auto-generated method stub
+
 			Log.i("PlayGame","Select the rows");
 			//dilwsh pinaka
 			String[] new_ch=new String[size];
@@ -598,7 +592,7 @@ if(foursquare_checkpoints!=null)
 	    		
                 ResultSet result_set = stmt.executeQuery("select name_venue from `venues` where name_venue='"+checkpoints_list.get(i).getname()+"'");
 	    	//	Log.i("PlayGame.java","sinartisi: Query sent succesfully");
-	    			if(result_set.next()==true){
+	    			if(result_set.next()){
 	    				Log.i("heyyy",checkpoints_list.get(i).getname());
 	    				new_ch[i]=checkpoints_list.get(i).getname();
 	    			}else
@@ -609,7 +603,7 @@ if(foursquare_checkpoints!=null)
 	    		//gia na perasw ton pinaka se allo activity
 	    		Bundle b=new Bundle();
 	    		b.putStringArray("transfer", new_ch);
-	    		Intent i=new Intent(PlayGame.this,chlistview.class);
+	    		Intent i=new Intent(PlayGame.this,Listview.class);
 	    	//	Intent i=new Intent(PlayGame.this,ListViewCheckboxesActivity.class);
 	    		
 	    		i.putExtras(b);
@@ -640,7 +634,6 @@ if(foursquare_checkpoints!=null)
 	  
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch(v.getId()){
 		
 		case R.id.map_print_button:			 			      
@@ -654,7 +647,6 @@ if(foursquare_checkpoints!=null)
 	
 	@Override
 	protected boolean isRouteDisplayed() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 	
@@ -686,6 +678,6 @@ if(foursquare_checkpoints!=null)
     public void quit() {
         super.finish();
         System.exit(0);
-    };
+    }
 	
 }

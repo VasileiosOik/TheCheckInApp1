@@ -7,7 +7,7 @@ import android.os.CountDownTimer;
 public class CountDown extends CountDownTimer {
 	private Activity _act;
 	private Class _cls;
-	public CountDown(long millisInFuture, long countDownInterval,Activity act,Class cls) {
+	CountDown(long millisInFuture, long countDownInterval, Activity act, Class cls) {
 	super(millisInFuture, countDownInterval);
 	_act=act;
 	_cls=cls;

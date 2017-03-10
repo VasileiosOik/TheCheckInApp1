@@ -2,27 +2,27 @@ package com.example.thecheckinapp;
 
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.AsyncTask;
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 
 public class Start extends Activity implements OnClickListener {
@@ -30,7 +30,7 @@ public class Start extends Activity implements OnClickListener {
 	//declarations
 	public static String person_id;
 	public static String person_name;
-	private TextView text;
+	//private TextView text;
 	private boolean exists;
 	
 	@Override
@@ -50,11 +50,15 @@ public class Start extends Activity implements OnClickListener {
 		//serial number of the phone (IMEI)
 	   TelephonyManager tManager = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE);
        person_id = tManager.getDeviceId();
+		String deviceId = Settings.Secure.getString(this.getContentResolver(),
+				Settings.Secure.ANDROID_ID);
+
        Log.i("Start","Phone Serial Number Fetched");
        Log.i("IMEI", person_id);
+		Log.i("IMEI", deviceId);
        
        //krathma timwn
-       if(Prefs.st_music==true){
+       if(Prefs.st_music){
     	   Intent svc=new Intent(Start.this,MusicService.class);
     	   startService(svc);
        }
@@ -73,7 +77,7 @@ public class Start extends Activity implements OnClickListener {
 	
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+
 		//epilogh gia kathe koubi ksekinw thn diadikasia tou
 		switch(v.getId())
 		{
@@ -149,7 +153,7 @@ public class Start extends Activity implements OnClickListener {
 	    	protected Context doInBackground(Context... params) {
 	    	 
 	    		Log.i("Start","CheckifRegistered Thread: Started");
-	    		Connection conn = null;
+	    		Connection conn;
 	            try {
 	            	
 	            	//Connect to mySQL Server
@@ -182,7 +186,7 @@ public class Start extends Activity implements OnClickListener {
 		    		Log.i("Start.java","personexist: Query sent succesfully");
 		    		
 	                
-	                if(result_set.next()==true)	//user exists
+	                if(result_set.next())	//user exists
 	                {
 	                	person_name=result_set.getString("name");
 	                	exists=true;
@@ -211,7 +215,7 @@ public class Start extends Activity implements OnClickListener {
 	    	
 	    	
 	        protected void onPostExecute(Context c) {
-	        	 if(exists==false)
+	        	 if(!exists)
 		            {
 		            	//New User:  Call RegisterScreenActivity
 	    	    		Log.i("Start","Call Register");

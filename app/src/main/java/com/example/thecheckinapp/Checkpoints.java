@@ -4,12 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.view.View;
 
 
 public class Checkpoints {
@@ -17,12 +15,11 @@ public class Checkpoints {
 	private double longi;
 	private String name;
 	private String idfsch;
-	public String uid;
+	private String uid;
 	private int distance;
-	public boolean visited=false;
-	
+
 	//edw ftiaxnw to kathe checkpoint
-	public Checkpoints(String or,double x, double y,String nam,int d)
+	Checkpoints(String or, double x, double y, String nam, int d)
 	{
 		idfsch=or;
 		lat=x;
@@ -32,22 +29,22 @@ public class Checkpoints {
 		
 	}
 	
-	public String getidfsch()
+	String getidfsch()
 	{
 		return idfsch;
 	}
 
 	
-	public double getlat()
+	double getlat()
 	{
 		return lat;
 	}
 	
-	public double getlongi()
+	double getlongi()
 	{
 		return longi;
 	}
-	public String getname()
+	String getname()
 	{
 		return name;
 	}
@@ -56,24 +53,24 @@ public class Checkpoints {
 	 * @uml.property  name="distance"
 	 */
 	//apostash
-	public int getDistance()
+	int getDistance()
 	{
 		return distance;
 	}
 	
 	
-	public void setUid(String u)
+	void setUid(String u)
 	{
 		uid=u;
 	}
 	public void setVisited(boolean v,Context cm)
 	{
-		visited=v;
+		boolean visited = v;
 				
 		new UpdateVisits().execute(cm);	
 		
 	}
-	public void setDistance(double x)
+	void setDistance(double x)
 	{
 		distance = (int)x;
 		
@@ -84,7 +81,7 @@ public class Checkpoints {
 	       	        
 	    	protected Context doInBackground(Context... params) {
 	    		//Log.i("to pireeeeeeeeeeee: ", idfsch);
-	    		Connection conn2 = null;
+	    		Connection conn2;
 		        
 	            try {
 					Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -133,7 +130,7 @@ public class Checkpoints {
 	        }
 	        protected void onPreExecute() {
 
-	        	PlayGame.task.setText("Checking-in...");
+	        	PlayGame.task.setText(R.string.checkIn);
 	        }
 	    }
 

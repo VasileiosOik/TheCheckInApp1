@@ -8,11 +8,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -22,7 +20,6 @@ public class Prefs extends  Activity implements OnCheckedChangeListener,OnClickL
 	static boolean	st_music;
 	private CheckBox set_button1;
 	private CheckBox set_button2;
-	String msg="";
 	View detailedMap;
 	
 	//gia to sattelite view
@@ -136,11 +133,11 @@ public class Prefs extends  Activity implements OnCheckedChangeListener,OnClickL
 	 	
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+
 		switch(v.getId()){
     	case R.id.save_button:
     		
-    		if(myMusic==true)
+    		if(myMusic)
     		{
     			//gia th mousikh
     			st_music=true;
@@ -154,7 +151,7 @@ public class Prefs extends  Activity implements OnCheckedChangeListener,OnClickL
     			
     		}
     		else
-    			if(myMusic==false)
+    			if(!myMusic)
     		{
     				st_music=false;
     			Context context = getApplicationContext();
@@ -167,7 +164,7 @@ public class Prefs extends  Activity implements OnCheckedChangeListener,OnClickL
     			
     		}
     		
-    		if(Mapmode==true)
+    		if(Mapmode)
     		{
     			satelliteMap=true;
     			Context context = getApplicationContext();
@@ -179,7 +176,7 @@ public class Prefs extends  Activity implements OnCheckedChangeListener,OnClickL
     		    
     		}
     		else
-    		if(Mapmode==false)
+    		if(!Mapmode)
     		{	
     			satelliteMap=false;
     			Context context = getApplicationContext();
@@ -197,7 +194,6 @@ public class Prefs extends  Activity implements OnCheckedChangeListener,OnClickL
 
 	@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-		// TODO Auto-generated method stub
 		
 	}
 	

@@ -3,7 +3,6 @@ package com.example.thecheckinapp;
 
 import android.app.Activity;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View.OnClickListener;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -84,7 +83,6 @@ public class Beginning extends Activity implements OnClickListener {
 	  
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch(v.getId()){
     	case R.id.start_button:
     		final LocationManager manager = (LocationManager) getSystemService( Context.LOCATION_SERVICE );

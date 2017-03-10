@@ -24,7 +24,7 @@ ArrayList<Checkpoints> ch=new ArrayList<Checkpoints>();
 
 	 URL fs = new URL("https://api.foursquare.com/v2/venues/search?limit=20&ll="+x+","+y+"&radius=50&&client_id=1T5X3LDPLKVMTPJTDH2W4Z1PJO1ICGNWHFBM05T5AWVCT52V&client_secret=XO4XJCFMNXBSIY53CK5JYLFNAUHA31U3HUJTRYHWEY1ZZM0Z&v=20120301");
 
-		InputStream is = null;
+		InputStream is;
 		String result = "";
 	
 		//anoigw thn sindesh
@@ -40,9 +40,9 @@ ArrayList<Checkpoints> ch=new ArrayList<Checkpoints>();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(is,"iso-8859-7"),8);
 			//BufferedReader reader = new BufferedReader(new InputStreamReader(is,"Windows-1253"),8);
 			StringBuilder sb = new StringBuilder();
-			String line = null;
+			String line;
 			while ((line = reader.readLine()) != null) {
-				sb.append(line + "\n");
+				sb.append(line).append("\n");
 			}
 			is.close();
 			result=sb.toString();

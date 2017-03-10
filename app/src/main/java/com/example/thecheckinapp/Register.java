@@ -1,8 +1,5 @@
 package com.example.thecheckinapp;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -11,9 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 
 public class Register extends Activity implements OnClickListener {
 
@@ -42,7 +41,7 @@ public class Register extends Activity implements OnClickListener {
 		
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+
 		switch(v.getId()){
     	case R.id.register_button:
     		//tipwnw oti egrapsa mesa sto edittext
@@ -60,7 +59,7 @@ public class Register extends Activity implements OnClickListener {
 		 
 	    	protected String doInBackground(String... params) {
 	    		Log.i("RegisterScreenActivity", "RegisterThread: Start");
-	    		Connection conn = null;
+	    		Connection conn;
 	            try {
 	            Class.forName("com.mysql.jdbc.Driver").newInstance();
 	            String connString = "jdbc:mysql://141.237.78.194:3306/test";                
@@ -93,9 +92,9 @@ public class Register extends Activity implements OnClickListener {
 	        protected void onPostExecute(String result) {
 	        	
 	        	
-	        	if(is_registered==false)
+	        	if(!is_registered)
 	        	{
-	        		task_text.setText("The nickname you chose is already taken. Pleace enter an other one...");
+	        		task_text.setText(R.string.nameChange);
 	        		Log.i("RegisterScreenActivity", "Nickname already taken");
 	        		register_button.setEnabled(true);
 	        	}
@@ -111,7 +110,7 @@ public class Register extends Activity implements OnClickListener {
 	        protected void onPreExecute() {
 	        	register_button.setEnabled(false);
 	        	
-	        	task_text.setText("Creating a new account...");
+	        	task_text.setText(R.string.accountNew);
 	        }
 	        
 	    }  
